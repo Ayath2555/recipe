@@ -59,7 +59,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [solution](https://your-solution-url.com)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/recipe-page-using-tailwind-css-lvFJFlONMI)
 - Live Site URL: [Live site](https://recipe-page-xi-plum.vercel.app)
 
 ## My process

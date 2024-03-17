@@ -1,89 +1,134 @@
-# Frontend Mentor - Recipe page
+# Frontend Mentor - Recipe page solution
 
-![Design preview for the Recipe page coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
 
-## The challenge
+## Overview
 
-Your challenge is to build out this recipe page and get it looking as close to the design as possible.
+### The challenge
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+#### struggled with HSL,google fonts while working with Tailwind CSS
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+  As newbie to tailwind CSS i struggled with those two things while doing this challenge in Tailwind CSS.
 
-## Where to find everything
+#### Solution
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+  Fortunately for me my friend and also teammate yogesh(@yogesh-stack-dev) guided me through this.
+  
+  1.I just converted HSL TO HEX and used them.
+  2.Through help i get the hang of using google fonts.
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+#### Example:
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+  ```javascript
+      //tailwind.config.js
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+      module.exports = {
+      content: ["*.{html,js}"],
+      theme: {
+      fontFamily:{
+        'custom':['young serif'],
+        'custom1':['outfit'],
+      }
+      },
+      plugins: [],
+      }
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+  ```
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
-## Building your project
+### Screenshot
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+![Recipe page screenshot](./RecipeComponent.png)
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
 
-## Deploying your project
+### Links
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+- Solution URL: [solution](https://your-solution-url.com)
+- Live Site URL: [live site](https://your-live-site-url.com)
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+## My process
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### Built with
 
-## Create a custom `README.md`
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- [Tailwinscss](https://www.tailwindcss.com)
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+### What I learned
 
-## Submitting your solution
+  I learned few things,one of them is an elements for bullet points and numbers. 
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+  Snippets of what i learned:
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+  ```html
+        <ul class="list-disc ml-7 text-[#854632] font-custom1">
+          <li class="pl-3 pb-2 "><span class="text-gray-600">2-3 large eggs </span> <br></li>
+          <li class="pl-3 pb-2 "><span class="text-gray-600">Salt, to taste </span><br></li>
+          <li class="pl-3 pb-2 "><span class="text-gray-600">Pepper, to taste </span><br></li>
+          <li class="pl-3 pb-2 "><span class="text-gray-600">1 tablespoon of butter or oil </span><br></li>
+          <li class="pl-3 pb-2 "><span class="text-gray-600">Optional fillings: cheese, diced vegetables, cooked meats, herbs </span><br></li>
+        </ul>
+  ```
 
-## Sharing your solution
 
-There are multiple places you can share your solution:
 
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+### Continued development
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+  
+During this HTML and Tailwind CSS project, I've identified key areas to enhance my skills:
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+1. **HTML Mastery:**
+   - Deepening understanding for creating structured and meaningful content.
 
-## Got feedback for us?
+2. **Tailwind CSS Proficiency:**
+   - Strengthening skills in efficient styling and responsive design.
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+3. **Responsive Design:**
+   - Enhancing expertise in creating responsive layouts for diverse devices.
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+4. **Git for Version Control:**
+   - Integrating version control using Git for effective project management and collaboration.
 
-**Have fun building!** 🚀
+5. **Documentation Practices:**
+   - Improving documentation to enhance code readability and collaboration.
+
+These targeted areas reflect my commitment to continuous improvement within the realm of HTML and Tailwind CSS. I look forward to applying these refined skills in upcoming projects.
+
+### Useful resources
+
+  - [Html and css resouce:1](https://htmlandcssguidebook.com/) - This helped me for refering and rework. I really liked this pattern and will use it going forward.
+  - [Css Flexbox resource:2](https://htmlandcssguidebook.com/) - This helped me for responsive design specific to flexbox.
+  - [Tailwind resource:3](https://tailwindcss.com) - This is an tailwind documentation and this is enough to get better at this skill. I'd recommend it to anyone still learning this concept.
+
+
+
+## Author
+
+- Website - [Ayathulla](https://www.your-site.com)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+
+
+
+## Acknowledgments
+
+  I am very thankful to my teammate yogesh(@yogesh-stack-dev) who helped me to complete this project.
+  I am eagerly waiting for future collaboration and team work.

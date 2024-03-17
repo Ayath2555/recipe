@@ -60,7 +60,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [solution](https://your-solution-url.com)
-- Live Site URL: [https://recipe-page-xi-plum.vercel.app](https://recipe-page-xi-plum.vercel.app)
+- Live Site URL: [Live site](https://recipe-page-xi-plum.vercel.app)
 
 ## My process
 
